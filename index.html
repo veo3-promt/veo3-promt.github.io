@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Generator Prompt Veo 3 V1.2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="sticker-top-left" />
+    <img src="https://cdn-icons-png.flaticon.com/512/742/742751.png" class="sticker-top-right" />
+
+    <h1 class="title">🎬 Generator Prompt Veo 3</h1>
+
+    <div class="donasi">
+      <button onclick="window.open('https://saweria.co/SigmasDev', '_blank')" class="donasi-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png" />
+        Support Developer
+      </button>
+      <small class="donasi-note">Jika suka dengan tool ini boleh donasi ke developer 😊</small>
+    </div>
+
+    <label>Tempat</label>
+    <input id="lokasi" type="text" placeholder="Contoh: medan pertempuran" />
+
+    <label>Tema Cerita:</label>
+    <input id="tema" type="text" placeholder="Contoh: seorang kakek menikah" />
+
+    <label>Suasana:</label>
+    <input id="suasana" type="text" placeholder="Contoh: malam, hujan" />
+
+    <label>Bahasa Dialog:</label>
+    <select id="bahasa">
+      <option value="id">Bahasa Indonesia</option>
+      <option value="en">English</option>
+    </select>
+
+    <div id="peran-container">
+      <div class="peran">
+        <input type="text" placeholder="Character Description" />
+        <textarea placeholder="Dialog Karakter"></textarea>
+        <input type="text" placeholder="Aktivitas" />
+        <input type="text" placeholder="Expresi" />
+      </div>
+    </div>
+
+    <button onclick="tambahPeran()" class="add-role-btn">➕ Tambahkan Peran</button>
+    <button onclick="generatePrompt()" class="generate-btn">🎥 Generate Prompt</button>
+
+    <label>Generated Prompt:</label>
+    <textarea id="hasil" rows="8" readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

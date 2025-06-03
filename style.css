@@ -1,0 +1,94 @@
+body {
+  background-color: #ebf8ff;
+  font-family: sans-serif;
+  padding: 1rem;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+}
+.peran {
+  padding: 1rem;
+  background: #e0f2fe;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bae6fd;
+}
+.add-role-btn, .generate-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.add-role-btn {
+  background-color: #ffffff;
+  border: 2px solid #93c5fd;
+  color: #2563eb;
+}
+.generate-btn {
+  background-color: #2563eb;
+  color: white;
+}
+.donasi {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.donasi-btn {
+  background: #facc15;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.donasi-btn img {
+  width: 24px;
+  height: 24px;
+}
+.donasi-note {
+  color: #64748b;
+  margin-top: 0.5rem;
+  display: block;
+}
+.sticker-top-left, .sticker-top-right {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+}
+.sticker-top-left {
+  top: -16px;
+  left: -16px;
+  transform: rotate(15deg);
+}
+.sticker-top-right {
+  top: -16px;
+  right: -16px;
+}
